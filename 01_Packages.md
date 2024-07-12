@@ -9,7 +9,13 @@ mkdir -v $LFS/sources
 chmod -v a+wt $LFS/sources
 
 # Download all packages and patches (all links are present in file "wget-list-sysv")
+cd /mnt/hostfs/
 wget --input-file=wget-list-sysv --continue --directory-prefix=$LFS/sources
+
+## Check below files and download if missing ##
+cd /mnt/lfs/sources/
+wget https://mirror-hk.koddos.net/lfs/lfs-packages/12.1/expat-2.6.0.tar.xz
+###############################################
 
 # Copy md5 hashs for next step
 cp md5sums $LFS/sources/

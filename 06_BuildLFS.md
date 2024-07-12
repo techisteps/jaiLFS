@@ -255,7 +255,14 @@ cd /sources/ && tar -xvf zstd-1.5.5.tar.gz && cd zstd-1.5.5
 
 make prefix=/usr
 
-make check
+# Use below statement insteed of what is given in book
+## CHECK ##
+# make check
+( make check 2>&1 | tee make_check.log && exit $PIPESTATUS )
+# Below line should not return anything
+grep FAIL make_check.log
+###########
+
 
 make prefix=/usr install
 

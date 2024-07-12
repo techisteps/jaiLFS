@@ -25,8 +25,8 @@ export LFS LC_ALL LFS_TGT PATH CONFIG_SITE
 EOF
 
 ### Below command run as ROOT ###
-#################################
 [ ! -e /etc/bash.bashrc ] || mv -v /etc/bash.bashrc /etc/bash.bashrc.NOUSE
+#################################
 
 
 #make -j16

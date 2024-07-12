@@ -22,7 +22,7 @@ https://www.linuxfromscratch.org/lfs/view/stable/chapter02/hostreqs.html
 apt update
 apt install build-essential
 apt install binutils coreutils diffutils findutils
-apt install bison gawk m4 python3 texinfo
+apt install bison gawk m4 python3 texinfo vim nano wget
 
 # version-check.sh script expect shell to be bash
 ln -fs /usr/bin/bash /bin/sh
@@ -75,12 +75,14 @@ mount | grep lfs    # To check that nosuid or nodev options are not present
 
 Verify that output of above command shows as below. (rw,relatime) should not contain nosuid or nodev etc.
 ```
-/mnt/hostfs/boot.img on /mnt/lfs type ext4 (rw,relatime)
+### /mnt/hostfs/boot.img on /mnt/lfs type ext4 (rw,relatime)
 ```
 
 ## Below check should be performed everytime you login
 
 ```bash
+/mnt/hostfs/check_vars.sh
+# or
 cd /mnt/hostfs/ && ./check_vars.sh
 ```
 
