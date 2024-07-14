@@ -23,6 +23,8 @@ apt update
 apt install build-essential
 apt install binutils coreutils diffutils findutils
 apt install bison gawk m4 python3 texinfo vim nano wget
+apt install flex expect dejagnu llvm libisl23
+apt install gettext
 
 # version-check.sh script expect shell to be bash
 ln -fs /usr/bin/bash /bin/sh

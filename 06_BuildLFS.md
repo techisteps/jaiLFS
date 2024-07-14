@@ -2094,7 +2094,7 @@ cd /sources/ && rm -rf sysvinit-3.08
 ```
 
 
-https://www.linuxfromscratch.org/lfs/view/stable/chapter08/cleanup.html
+<!-- https://www.linuxfromscratch.org/lfs/view/stable/chapter08/cleanup.html
 8.84. Cleaning Up
 
 ```bash
@@ -2107,7 +2107,7 @@ find /usr -depth -name $(uname -m)-lfs-linux-gnu\* | xargs rm -rf
 
 userdel -r tester
 
-```
+``` -->
 
 https://www.linuxfromscratch.org/lfs/view/stable/chapter08/stripping.html  
 8.83. Stripping
