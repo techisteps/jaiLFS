@@ -1,4 +1,5 @@
->> ### Act as ROOT (in CHROOT) and verify check_vars.sh
+<font color="#FF0000"><b> Act as ROOT (in CHROOT) </b></font> and verify environment using ```env-check.sh```
+---
 
 
 https://www.linuxfromscratch.org/lfs/view/stable/chapter08/man-pages.html  
@@ -255,7 +256,7 @@ cd /sources/ && tar -xvf zstd-1.5.5.tar.gz && cd zstd-1.5.5
 
 make prefix=/usr
 
-# Use below statement insteed of what is given in book
+# Use below statement instead of what is given in book
 ## CHECK ##
 # make check
 ( make check 2>&1 | tee make_check.log && exit $PIPESTATUS )

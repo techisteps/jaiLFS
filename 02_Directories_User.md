@@ -1,4 +1,5 @@
->> ### Act as ROOT and verify check_vars.sh
+<font color="#FF0000"><b> Act as ROOT </b></font> and verify environment using ```env-check.sh```
+---
 
 https://www.linuxfromscratch.org/lfs/view/stable/chapter04/creatingminlayout.html  
 4.2. Creating a Limited Directory Layout in the LFS Filesystem  

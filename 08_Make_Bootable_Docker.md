@@ -1,4 +1,5 @@
->> ### Act as ROOT (in CHROOT) and verify check_vars.sh
+<font color="#FF0000"><b> Act as ROOT (in CHROOT) </b></font> and verify environment using ```env-check.sh```
+---
 
 https://www.linuxfromscratch.org/lfs/view/stable/chapter10/fstab.html  
 10.2. Creating the /etc/fstab File  

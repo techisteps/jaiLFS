@@ -1,4 +1,5 @@
->> ### Act as ROOT and verify check_vars.sh
+<font color="#FF0000"><b> Act as ROOT </b></font> and verify environment using ```env-check.sh```
+---
 
 https://www.linuxfromscratch.org/lfs/view/stable/chapter03/introduction.html  
 3.1. Introduction  
@@ -17,7 +18,7 @@ cd /mnt/lfs/sources/
 wget https://mirror-hk.koddos.net/lfs/lfs-packages/12.1/expat-2.6.0.tar.xz
 ###############################################
 
-# Copy md5 hashs for next step
+# Copy md5 hash's for the next step
 cp md5sums $LFS/sources/
 
 # Check sanctity

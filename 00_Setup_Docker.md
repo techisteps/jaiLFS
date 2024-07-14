@@ -1,6 +1,7 @@
->> ### Act as ROOT and verify check_vars.sh
+<font color="#FF0000"><b> Act as ROOT </b></font> and verify environment using ```env-check.sh```
+---
 
-## Setup host envinronment for LFS build
+## Setup host environment for LFS build
 
 ### Create host system
 ```powershell
@@ -14,7 +15,7 @@ docker attach LFS
 docker start LFS
 ```
 
-### Install mimimum required and expected packages
+### Install minimum required and expected packages
 https://www.linuxfromscratch.org/lfs/view/stable/chapter02/hostreqs.html  
 2.2. Host System Requirements  
 ```bash
@@ -54,7 +55,7 @@ https://www.linuxfromscratch.org/lfs/view/stable/chapter02/mounting.html
 cd /mnt/hostfs/ && truncate -s 10G boot.img
 cd /mnt/hostfs/ && mkfs.ext4 boot.img
 
-# Remember hardcoing of LFS
+# Remember hardcoding of LFS
 # Below is the location where created disk will be mounted
 export LFS=/mnt/lfs
 echo $LFS
@@ -83,9 +84,9 @@ Verify that output of above command shows as below. (rw,relatime) should not con
 ## Below check should be performed everytime you login
 
 ```bash
-/mnt/hostfs/check_vars.sh
+/mnt/hostfs/env-check.sh
 # or
-cd /mnt/hostfs/ && ./check_vars.sh
+cd /mnt/hostfs/ && ./env-check.sh
 ```
 
 

@@ -46,7 +46,6 @@ running_config.txt
 
 
 ## Useful scripts:  
-check_vars.sh  
 env-check.sh  
 version-check.sh  
 vm.bat

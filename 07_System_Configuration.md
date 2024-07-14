@@ -1,4 +1,5 @@
->> ### Act as ROOT (in CHROOT) and verify check_vars.sh
+<font color="#FF0000"><b> Act as ROOT (in CHROOT) </b></font> and verify environment using ```env-check.sh```
+---
 
 https://www.linuxfromscratch.org/lfs/view/stable/chapter09/bootscripts.html  
 9.2. LFS-Bootscripts-20230728  

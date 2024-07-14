@@ -1,4 +1,5 @@
->> ### Act as lfs and verify check_vars.sh
+<font color="#FF0000"><b> Act as lfs </b></font> and verify environment using ```env-check.sh```
+---
 
 https://www.linuxfromscratch.org/lfs/view/stable/chapter04/settingenvironment.html  
 4.4. Setting Up the Environment  
@@ -10,7 +11,7 @@ exec env -i HOME=$HOME TERM=$TERM PS1='\u:\w\$ ' /bin/bash
 EOF
 
 
-# Remember hardcoing of LFS
+# Remember hardcoding of LFS
 cat > ~/.bashrc << "EOF"
 set +h
 umask 022

@@ -5,7 +5,7 @@ Create new VM with:
 2. 10G Ram "10240 MB"
 3. 8 Processor with "100%" execution cap
 4. Video Memory 128 MB and 3D Acceleration
-5. Attched ISO "alpine-standard-3.19.1-x86_64.iso"
+5. Attached ISO "alpine-standard-3.19.1-x86_64.iso"
 6. Attached VDI images  
 a. One with 4GB capacity (This is for Alpine install)  
 b. Another with 16GB capacity (This is for LFS install)  
@@ -74,7 +74,7 @@ su -
 ```
 
 
-Login as <font color="#00de09"><b>root</b></font> and run below commands to install required package for LSB requirment  
+Login as <font color="#00de09"><b>root</b></font> and run below commands to install required package for LSB requirement  
 (https://www.linuxfromscratch.org/lfs/view/stable/prologue/standards.html)
 
 
@@ -115,7 +115,7 @@ source ~/.bash_profile
 ```
 
 ```bash
-# Chagne default shell for alpine and root
+# Change default shell for alpine and root
 chsh root #/bin/bash
 chsh alpine #/bin/bash
 

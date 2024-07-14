@@ -1,4 +1,5 @@
->> ### Act as ROOT and verify check_vars.sh
+<font color="#FF0000"><b> Act as ROOT </b></font> and verify environment using ```env-check.sh```
+---
 
 https://www.linuxfromscratch.org/lfs/view/stable/chapter07/changingowner.html  
 7.2. Changing Ownership  
