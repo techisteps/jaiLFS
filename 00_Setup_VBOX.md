@@ -23,7 +23,7 @@ Create new VM with:
 
 Boot the VM and login as `root` user 
 > [!IMPORTANT] 
-> (No password required)
+> (No password required for root until you set one)
 
 Once login run command ```setup-alpine```
 ```bash
@@ -67,6 +67,8 @@ Check below on VBOX.
 ```bash
 # Check networking services are running
 rc-service networking status
+# start if not running 
+rc-service networking start
 # Check IP address to connect
 ip a s | grep inet
 ```
@@ -77,6 +79,7 @@ su -
 #root password"
 ```
 
+### Steps to install required packages
 
 Login as `root` and run below commands to install required package for LSB requirement  
 (https://www.linuxfromscratch.org/lfs/view/stable/prologue/standards.html)
@@ -91,22 +94,14 @@ apk add perl python3
 apk add virtualbox-guest-additions
 ```
 
-Setup environment variables
+### Setup environment variables
 ```bash
 export LFS=/mnt/lfs
 echo $LFS
 export HostFS=/mnt/HostFS
 echo $HostFS
 
-#cp /mnt/HostFS/bashrc ~/.bashrc
-#cp ~/.bashrc ~/.bash_profile
-
-# Or 
-
-export MAKEFLAGS=-j16
-
 cat >> ~/.bashrc << "EOF"
-#export SHELL=/bin/bash
 export LFS=/mnt/lfs
 export HostFS=/mnt/HostFS
 export MAKEFLAGS=-j$(nproc)
@@ -114,10 +109,9 @@ EOF
 cp ~/.bashrc ~/.bash_profile
 
 source ~/.bash_profile
-
-
 ```
 
+### Setup default shell
 ```bash
 # Change default shell for alpine and root
 chsh root #/bin/bash
@@ -126,7 +120,7 @@ chsh alpine #/bin/bash
 # Exit the shell and login again
 ```
 
-Setup HostFS (Based on shared folder defined in VBOX)
+### Setup HostFS (Based on shared folder defined in VBOX)
 
 ```bash
 # Check virtualbox-guest-additions is running
@@ -139,7 +133,8 @@ mkdir -pv $HostFS
 mount -t vboxsf HostFS $HostFS
 ```
 
-Must check environment before proceeding  
+> [!CAUTION] 
+> Must check environment before proceeding  
 
 ```bash
 cp $HostFS/env-check.sh .
@@ -147,7 +142,7 @@ cp $HostFS/env-check.sh /usr/bin/
 ./env-check.sh
 ```
 
-
+> [!IMPORTANT] 
 Run version check  
 ( https://www.linuxfromscratch.org/lfs/view/stable/chapter02/hostreqs.html )  
 
@@ -162,7 +157,7 @@ cp $HostFS/version-check.sh .
 ./version-check.sh
 ```
 
-Setup LFS disk  
+### Setup LFS disk  
 https://www.linuxfromscratch.org/lfs/view/stable/chapter02/creatingfilesystem.html
 
 ```bash
