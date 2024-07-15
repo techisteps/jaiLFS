@@ -32,7 +32,11 @@ groupadd lfs
 useradd -s /bin/bash -g lfs -m -k /dev/null lfs
 
 # Set password for lfs (generally same as user)
-passwd lfs
+
+## Deviation ##
+#passwd lfs
+usermod --password $(echo lfs | openssl passwd -1 -stdin) lfs
+###############
 
 # Make lfs user owner
 chown -v lfs $LFS/{usr{,/*},lib,var,etc,bin,sbin,tools}
@@ -43,4 +47,5 @@ esac
 su - lfs
 
 ```
-
+> [!NOTE]  
+For above deviation you can refer: https://github.com/techisteps/LinuxTips/blob/main/passwords.md#check-users-password  

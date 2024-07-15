@@ -8,7 +8,8 @@ iii. General Compilation Instructions
 > **Test below before proceeding with compilation**
 
 ```bash
-cd /mnt/hostfs/ && ./check_vars.sh
+# cd /mnt/hostfs/ && ./check_vars.sh
+/usr/bin/env-check.sh
 ```
 
 ```bash
