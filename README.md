@@ -49,6 +49,7 @@ running_config.txt
 env-check.sh  
 version-check.sh  
 vm.bat
+Handy_Commands.md
 
 ### Registration ofter success
 LFS_Register.md
