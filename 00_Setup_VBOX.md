@@ -21,10 +21,9 @@ Create new VM with:
 
 ## Install Alpine
 
-Boot the VM and login as 
-<font color="#00de09"><b>root</b></font>
-user 
-<font color="#e28743"><b>(No password required)</b></font>
+Boot the VM and login as `root` user 
+> [!IMPORTANT] 
+> (No password required)
 
 Once login run command ```setup-alpine```
 ```bash
@@ -62,8 +61,7 @@ Few important links for reference:
 > [!TIP] 
 > Putty will be helpful.
 <!-- <font color="#F9F871"> Putty will be helpful. </font>   -->
-<details>
-<summary>Steps to setup Putty</summary>
+### Steps to setup Putty
 
 Check below on VBOX.
 ```bash
@@ -78,7 +76,7 @@ On Putty use IP received from above and use `alpine` (non-root) user to login. `
 su -
 #root password"
 ```
-</details>
+
 
 Login as `root` and run below commands to install required package for LSB requirement  
 (https://www.linuxfromscratch.org/lfs/view/stable/prologue/standards.html)
