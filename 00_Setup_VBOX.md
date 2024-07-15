@@ -7,15 +7,16 @@ Create new VM with:
 4. Video Memory 128 MB and 3D Acceleration
 5. Attached ISO "alpine-standard-3.19.1-x86_64.iso"
 6. Attached VDI images  
-a. One with 4GB capacity (This is for Alpine install)  
-b. Another with 16GB capacity (This is for LFS install)  
+   a. One with 4GB capacity (This is for Alpine install)  
+   b. Another with 16GB capacity (This is for LFS install)  
 7. Network change to "Bridged Adapter"
 8. Add a Shared Folder  
-a. Folder Path point to you project path  
-b. Folder Name "LFS"  
-c. Mount Point "/mnt/RootFS"  
-d. Read Only FALSE  
-e. Auto-mount TRUE  
+   a. Folder Path point to you project path  
+   b. Folder Name "HostFS"  
+   c. Mount Point "/mnt/HostFS"  
+   d. Read Only FALSE  
+   e. Auto-mount TRUE  
+   f. Make Permanent TRUE  
 
 
 ## Install Alpine
@@ -58,7 +59,10 @@ Few important links for reference:
 
 ## Alpine Host Setup
 
-<font color="#F9F871"> Putty will be helpful. </font>  
+<!-- <font color="#F9F871"> Putty will be helpful. </font>   -->
+> [!TIP] 
+> Putty will be helpful.
+
 Check below on VBOX.
 ```bash
 # Check networking services are running

@@ -6,7 +6,7 @@
 
 Green='\e[0;32m'            # Green
 Red='\e[0;31m'              # Red
-Blue='‘\e[1;34m'          # Blue
+Blue='\e[1;34m'          # Blue
 NC='\e[0m'                  # No Color
 
 export LFS=/mnt/lfs

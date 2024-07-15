@@ -18,7 +18,7 @@ cd /sources/ && rm -rf lfs-bootscripts-20230728
 https://www.linuxfromscratch.org/lfs/view/stable/chapter09/symlinks.html  
 9.4. Managing Devices  
 
-> Need to visit this chapter in detials again.  
+> Need to visit this chapter in details again.  
 
 
 

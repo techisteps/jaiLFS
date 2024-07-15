@@ -18,8 +18,7 @@ Choose any one flavour and proceed with instructions.
 
 
 ### Flavour-wise setup:  
-[00_Setup_Docker](00_Setup_Docker.md)  
-[00_Setup_VBOX](00_Setup_VBOX.md)  
+[00_Setup_Docker](00_Setup_Docker.md) or [00_Setup_VBOX](00_Setup_VBOX.md)  
 
 ### Common Steps:  
 [01_Packages](01_Packages.md)  
@@ -31,7 +30,7 @@ Choose any one flavour and proceed with instructions.
 [07_System_Configuration](07_System_Configuration.md)  
 
 ### Flavour-wise setup:  
-[08_Make_Bootable_Docker](08_Make_Bootable_Docker.md)  
+[08_Make_Bootable_Docker](08_Make_Bootable_Docker.md) or 
 [08_Make_Bootable_VBOX](08_Make_Bootable_VBOX.md)  
 
 ### Final boot:  
@@ -48,7 +47,7 @@ running_config.txt
 ## Useful scripts:  
 env-check.sh  
 version-check.sh  
-vm.bat
+vm.bat  
 Handy_Commands.md
 
 ### Registration ofter success
