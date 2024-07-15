@@ -59,9 +59,11 @@ Few important links for reference:
 
 ## Alpine Host Setup
 
-<!-- <font color="#F9F871"> Putty will be helpful. </font>   -->
 > [!TIP] 
 > Putty will be helpful.
+<!-- <font color="#F9F871"> Putty will be helpful. </font>   -->
+<details>
+<summary>Steps to setup Putty</summary>
 
 Check below on VBOX.
 ```bash
@@ -71,14 +73,14 @@ rc-service networking status
 ip a s | grep inet
 ```
 
-On Putty use IP received from above and use "**alpine**" (non-root) user to login. "**root**" user login will not work. Once login you can switch to "**root**" user by:
+On Putty use IP received from above and use `alpine` (non-root) user to login. `root` user login will not work. Once login you can switch to `root` user by:
 ```bash
 su -
 #root password"
 ```
+</details>
 
-
-Login as <font color="#00de09"><b>root</b></font> and run below commands to install required package for LSB requirement  
+Login as `root` and run below commands to install required package for LSB requirement  
 (https://www.linuxfromscratch.org/lfs/view/stable/prologue/standards.html)
 
 
