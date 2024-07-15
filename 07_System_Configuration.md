@@ -1,3 +1,4 @@
+> [!CAUTION]  
 <font color="#FF0000"><b> Act as ROOT (in CHROOT) </b></font> and verify environment using ```env-check.sh```
 ---
 

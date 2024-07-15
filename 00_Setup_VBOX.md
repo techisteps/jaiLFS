@@ -1,3 +1,7 @@
+> [!CAUTION]  
+<font color="#FF0000"><b> Act as ROOT </b></font> and verify environment using ```env-check.sh```
+---
+
 ## Virtualbox Setup
 
 Create new VM with:
@@ -76,7 +80,7 @@ ip a s | grep inet
 On Putty use IP received from above and use `alpine` (non-root) user to login. `root` user login will not work. Once login you can switch to `root` user by:
 ```bash
 su -
-#root password"
+#root password if set any"
 ```
 
 ### Steps to install required packages
@@ -90,7 +94,7 @@ apk update
 apk add coreutils diffutils findutils binutils build-base util-linux
 apk add bash grep bison gawk m4 sed texinfo xz shadow
 apk add bc file gzip man-db ncurses procps psmisc tar zlib
-apk add perl python3
+apk add perl python3 wget
 apk add virtualbox-guest-additions
 ```
 
@@ -114,8 +118,10 @@ source ~/.bash_profile
 ### Setup default shell
 ```bash
 # Change default shell for alpine and root
-chsh root #/bin/bash
-chsh alpine #/bin/bash
+chsh root 
+# Type /bin/bash
+chsh alpine
+# Type /bin/bash
 
 # Exit the shell and login again
 ```
