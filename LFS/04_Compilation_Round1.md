@@ -12,18 +12,18 @@ iii. General Compilation Instructions
 /usr/bin/env-check.sh
 ```
 
-```bash
-echo $LFS           # Should be /mnt/lfs
-lsblk               # To check that files mounted to given location as loop device
-mount | grep lfs    # To check that nosuid or nodev options are not present
-whoami              # Should be root on host
-echo $0             # Should be bash
-
-ls -lrt /usr/bin/sh         # Should be symbolic link to "/usr/bin/bash" if its not than run as root "ln -fs /usr/bin/bash /usr/bin/sh"
-ls -lrt /usr/bin/awk        # Should be symbolic link to "/usr/bin/gawk" if its not than run as root "ln -fs /usr/bin/gawk /usr/bin/awk"
-ls -lrt /usr/bin/yacc       # Should be symbolic link to "/usr/bin/bison" if its not than run as root "ln -fs /usr/bin/bison /usr/bin/yacc"
-
-```
+# ```bash
+# echo $LFS           # Should be /mnt/lfs
+# lsblk               # To check that files mounted to given location as loop device
+# mount | grep lfs    # To check that nosuid or nodev options are not present
+# whoami              # Should be root on host
+# echo $0             # Should be bash
+# 
+# ls -lrt /usr/bin/sh         # Should be symbolic link to "/usr/bin/bash" if its not than run as root "ln -fs /usr/bin/bash /usr/bin/sh"
+# ls -lrt /usr/bin/awk        # Should be symbolic link to "/usr/bin/gawk" if its not than run as root "ln -fs /usr/bin/gawk /usr/bin/awk"
+# ls -lrt /usr/bin/yacc       # Should be symbolic link to "/usr/bin/bison" if its not than run as root "ln -fs /usr/bin/bison /usr/bin/yacc"
+# 
+# ```
 
 
 https://www.linuxfromscratch.org/lfs/view/stable/chapter05/binutils-pass1.html  

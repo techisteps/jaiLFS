@@ -93,9 +93,12 @@ Verify that output of above command shows as below. (rw,relatime) should not con
 ## Below check should be performed everytime you login
 
 ```bash
+cp $HostFS/env-check.sh /usr/bin/
 $HostFS/env-check.sh
 # or
 cd $HostFS && ./env-check.sh
+# or
+/usr/bin/env-check.sh
 ```
 
 

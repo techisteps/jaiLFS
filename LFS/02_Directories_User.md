@@ -44,6 +44,9 @@ case $(uname -m) in
   x86_64) chown -v lfs $LFS/lib64 ;;
 esac
 
+# This command is in next section but need to be executed as root thus moved here
+[ ! -e /etc/bash.bashrc ] || mv -v /etc/bash.bashrc /etc/bash.bashrc.NOUSE
+
 su - lfs
 
 ```
